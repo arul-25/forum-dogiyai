@@ -1,5 +1,3 @@
-# Controler User detail css dan javascript masih belum terbaca
-
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
