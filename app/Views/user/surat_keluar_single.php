@@ -23,7 +23,7 @@
                         <div class="header">
                             <div class="row">
                                 <div class="kiri col-md-9">
-                                    <h2>Daftar Surat Masuk</h2>
+                                    <h2>Daftar Surat Keluar</h2>
                                 </div>
                                 <div class="kanan">
                                     <div class="input-group">
@@ -36,7 +36,7 @@
                         <section id="content1">
                             <!--Recent Question Content Section -->
                             <div class="panel panel-default">
-                                <div class="panel-heading text-center">Surat Masuk</div>
+                                <div class="panel-heading text-center">Surat Keluar</div>
                                 <div class="panel-body">
                                     <!-- surat 1 -->
                                     <div class="question-type2033">
@@ -48,16 +48,16 @@
                                             <div class="col-md-11">
                                                 <div class="right-description893">
                                                     <div id="que-hedder2983">
-                                                        <h3>Perihal <?= $surat_masuk['perihal']; ?></h3>
-                                                        <p>Diposting oleh admin <?= tanggal($surat_masuk['tgl_surat']); ?>, Sifat
-                                                            <span><?= $surat_masuk['sifat']; ?></span> Nomor Surat : <?= $surat_masuk['no_surat_masuk']; ?></p>
+                                                        <h3>Perihal <?= $surat_keluar['perihal']; ?></h3>
+                                                        <p>Diposting oleh admin <?= tanggal($surat_keluar['tgl_surat']); ?>, Sifat
+                                                            <span><?= $surat_keluar['sifat']; ?></span> Nomor Surat : <?= $surat_keluar['no_surat_keluar']; ?></p>
                                                     </div>
                                                     <div class="ques-details10018">
-                                                        <p><?= $surat_masuk['lampiran']; ?>.</p>
+                                                        <p><?= $surat_keluar['lampiran']; ?>.</p>
                                                     </div>
                                                     <hr>
                                                     <div class="ques-icon-info3293">
-                                                        <a href="/assets/upload/dokument_surat_masuk/<?= $surat_masuk['file']; ?>" target="_blank"><i class="fas fa-eye" aria-hidden="true"> Lihat
+                                                        <a href="/assets/upload/dokument_surat_masuk/<?= $surat_keluar['file']; ?>" target="_blank"><i class="fas fa-eye" aria-hidden="true"> Lihat
                                                                 Berkas</i></a>
                                                     </div>
                                                 </div>
@@ -66,7 +66,7 @@
                                     </div>
                                     <!-- end surat 1 -->
                                 </div>
-                                <div class="panel-footer text-center"><a href="/surat_masuk">-- Tampilkan Lebih Banyak --</a>
+                                <div class="panel-footer text-center"><a href="/surat_keluar">-- Tampilkan Lebih Banyak --</a>
                                 </div>
                             </div>
                         </section>

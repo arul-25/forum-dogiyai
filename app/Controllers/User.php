@@ -31,15 +31,15 @@ class User extends BaseController
 	public function surat_masuk()
 	{
 		$data['title'] = "Surat Masuk";
-		$data['surat_masuk'] = $this->SuratMasuk_model->getSuratMasuk();
+		$data['surat_masuk'] = $this->SuratMasuk_model->getSuratMasuk(false, 3, 3);
 		return view('user/surat_masuk', $data);
 	}
 
-	public function detail($id)
+	public function singleSuratMasuk($id)
 	{
-		//$surat_masuk = $this->SuratMasuk_model->getSuratMasuk($id);
+		$surat_masuk = $this->SuratMasuk_model->getSuratMasuk($id);
 		$data = [
-			//'surat' => $surat_masuk,
+			'surat_masuk' => $surat_masuk,
 			'title' => "Surat MAsuk"
 		];
 		return view('user/surat_masuk_single', $data);
@@ -48,7 +48,15 @@ class User extends BaseController
 	public function surat_keluar()
 	{
 		$data['title'] = "Surat Keluar";
+		$data['surat_keluar'] = $this->SuratKeluar_model->getSuratKeluar(false, 3, 3);
 		return view('user/surat_keluar', $data);
+	}
+
+	public function singleSuratKeluar($id)
+	{
+		$data['title'] = "Surat Keluar";
+		$data['surat_keluar'] = $this->SuratKeluar_model->getSuratKeluar($id);
+		return view('user/surat_keluar_single', $data);
 	}
 
 	public function informasi_kas()

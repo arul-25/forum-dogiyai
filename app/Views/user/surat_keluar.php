@@ -41,140 +41,35 @@
                                 <div class="panel-heading text-center">Surat Masuk</div>
                                 <div class="panel-body">
                                     <!-- surat 1 -->
-                                    <div class="question-type2033">
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="left-user12923 left-user12923-repeat">
-                                                    <img src="image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                                            </div>
-                                            <div class="col-md-11">
-                                                <div class="right-description893">
-                                                    <div id="que-hedder2983">
-                                                        <h3><a href="post-deatils.html" target="_blank">Perihal
-                                                                Pengenalan Mahasisa baru</a></h3>
-                                                        <p>Diposting oleh admin 06 Desember 2020, Sifat
-                                                            <span>Terbuka</span></p>
-                                                    </div>
-                                                    <div class="ques-details10018">
-                                                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.
-                                                            Vivamus at elit quis urna adipiscing iaculis.Duis
-                                                            dapibus
-                                                            aliquam mi, eget euismod sem scelerisque ut. Vivamus at
-                                                            elit
-                                                            quis urna adipiscing iaculis.</p>
-                                                    </div>
-                                                    <hr>
-                                                    <div class="ques-icon-info3293">
-                                                        <a href="#"><i class="fas fa-eye" aria-hidden="true"> Lihat
-                                                                Berkas</i></a>
-                                                        <a href="#"><i class="fas fa-download" aria-hidden="true">
-                                                                Download File</i></i></a>
-                                                    </div>
+                                    <?php foreach ($surat_keluar as $row) : ?>
+                                        <div class="question-type2033">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <div class="left-user12923 left-user12923-repeat">
+                                                        <img src="/image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
                                                 </div>
-                                            </div>
-                                            <!-- <div class="col-md-2">
-                                                        <div class="ques-type302">
-                                                            <a href="#">
-                                                                <button type="button" class="q-type238"><i class="fa fa-comment" aria-hidden="true">  333335 answer</i></button>
-                                                            </a>
-                                                            <a href="#">
-                                                                <button type="button" class="q-type23 button-ques2973"> <i class="fa fa-user-circle-o" aria-hidden="true"> 70 view</i> </button>
-                                                            </a>
+                                                <div class="col-md-11">
+                                                    <div class="right-description893">
+                                                        <div id="que-hedder2983">
+                                                            <h3><a href="/user/singelSuratKeluar/<?= $row['id_surat_keluar']; ?>">Perihal
+                                                                    <?= $row['perihal']; ?></a></h3>
+                                                            <p>Diposting oleh <?= tanggal(date($row['tgl_surat'])); ?>, Sifat
+                                                                <span><?= $row['sifat']; ?></span></p>
                                                         </div>
-                                                    </div> -->
+                                                        <div class="ques-details10018">
+                                                            <p><?= $row['lampiran']; ?></p>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="ques-icon-info3293">
+                                                            <a href="/assets/upload/dokument_surat_keluar/<?= $row['file']; ?>" target="_blank"><i class="fas fa-eye" aria-hidden="true"> Lihat
+                                                                    Berkas</i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php endforeach; ?>
                                     <!-- end surat 1 -->
-                                    <!-- surat 2 -->
-                                    <div class="question-type2033">
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="left-user12923 left-user12923-repeat">
-                                                    <img src="image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                                            </div>
-                                            <div class="col-md-11">
-                                                <div class="right-description893">
-                                                    <div id="que-hedder2983">
-                                                        <h3><a href="post-deatils.html" target="_blank">Perihal
-                                                                Pengenalan Mahasisa baru</a></h3>
-                                                        <p>Diposting oleh admin 06 Desember 2020, Sifat
-                                                            <span>Terbuka</span></p>
-                                                    </div>
-                                                    <div class="ques-details10018">
-                                                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.
-                                                            Vivamus at elit quis urna adipiscing iaculis.Duis
-                                                            dapibus
-                                                            aliquam mi, eget euismod sem scelerisque ut. Vivamus at
-                                                            elit
-                                                            quis urna adipiscing iaculis.</p>
-                                                    </div>
-                                                    <hr>
-                                                    <div class="ques-icon-info3293">
-                                                        <a href="#"><i class="fas fa-eye" aria-hidden="true"> Lihat
-                                                                Berkas</i></a>
-                                                        <a href="#"><i class="fas fa-download" aria-hidden="true">
-                                                                Download File</i></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-md-2">
-                                                                                                <div class="ques-type302">
-                                                                                                    <a href="#">
-                                                                                                        <button type="button" class="q-type238"><i class="fa fa-comment" aria-hidden="true">  333335 answer</i></button>
-                                                                                                    </a>
-                                                                                                    <a href="#">
-                                                                                                        <button type="button" class="q-type23 button-ques2973"> <i class="fa fa-user-circle-o" aria-hidden="true"> 70 view</i> </button>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <!-- end surat 2 -->
-                                    <!-- surat 3 -->
-                                    <div class="question-type2033">
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="left-user12923 left-user12923-repeat">
-                                                    <img src="image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                                            </div>
-                                            <div class="col-md-11">
-                                                <div class="right-description893">
-                                                    <div id="que-hedder2983">
-                                                        <h3><a href="post-deatils.html" target="_blank">Perihal
-                                                                Pengenalan Mahasisa baru</a></h3>
-                                                        <p>Diposting oleh admin 06 Desember 2020, Sifat
-                                                            <span>Terbuka</span></p>
-                                                    </div>
-                                                    <div class="ques-details10018">
-                                                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.
-                                                            Vivamus at elit quis urna adipiscing iaculis.Duis
-                                                            dapibus
-                                                            aliquam mi, eget euismod sem scelerisque ut. Vivamus at
-                                                            elit
-                                                            quis urna adipiscing iaculis.</p>
-                                                    </div>
-                                                    <hr>
-                                                    <div class="ques-icon-info3293">
-                                                        <a href="#"><i class="fas fa-eye" aria-hidden="true"> Lihat
-                                                                Berkas</i></a>
-                                                        <a href="#"><i class="fas fa-download" aria-hidden="true">
-                                                                Download File</i></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-md-2">
-                                                                                                <div class="ques-type302">
-                                                                                                    <a href="#">
-                                                                                                        <button type="button" class="q-type238"><i class="fa fa-comment" aria-hidden="true">  333335 answer</i></button>
-                                                                                                    </a>
-                                                                                                    <a href="#">
-                                                                                                        <button type="button" class="q-type23 button-ques2973"> <i class="fa fa-user-circle-o" aria-hidden="true"> 70 view</i> </button>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <!-- end surat 3 -->
                                 </div>
                             </div>
                             <div class="pagination-surat">

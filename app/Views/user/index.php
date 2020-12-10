@@ -32,12 +32,12 @@
                                             <div class="row">
                                                 <div class="col-md-1">
                                                     <div class="left-user12923 left-user12923-repeat">
-                                                        <img src="image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                                        <img src="/image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
                                                 </div>
                                                 <div class="col-md-9">
                                                     <div class="right-description893">
                                                         <div id="que-hedder2983">
-                                                            <h3><a href="/user/detail/<?= $row['id_surat_masuk']; ?>"><?= $row['lampiran']; ?></a></h3>
+                                                            <h3><a href="/user/singleSuratMasuk/<?= $row['id_surat_masuk']; ?>"><?= $row['lampiran']; ?></a></h3>
                                                             <p>Diposting oleh admin, <?= tanggal($row['tgl_surat']); ?>, Sifat <span><?= $row['sifat']; ?></span></p>
                                                         </div>
                                                         <div class="ques-details10018">
@@ -64,7 +64,7 @@
                         <section id="content1">
                             <!--Recent Question Content Section -->
                             <div class="panel panel-default">
-                                <div class="panel-heading">Surat Masuk</div>
+                                <div class="panel-heading">Surat Keluar</div>
                                 <div class="panel-body">
 
                                     <!-- Data Surat Masuk -->
@@ -74,12 +74,12 @@
                                             <div class="row">
                                                 <div class="col-md-1">
                                                     <div class="left-user12923 left-user12923-repeat">
-                                                        <img src="image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                                        <img src="/image/images.png" alt="image"> <i class="fa fa-check" aria-hidden="true"></i> </div>
                                                 </div>
                                                 <div class="col-md-9">
                                                     <div class="right-description893">
                                                         <div id="que-hedder2983">
-                                                            <h3><a href="post-deatils.html" target="_blank"><?= $row['lampiran']; ?></a></h3>
+                                                            <h3><a href="/user/singleSuratKeluar/<?= $row['id_surat_keluar']; ?>"><?= $row['lampiran']; ?></a></h3>
                                                             <p>Diposting oleh admin, <?= tanggal($row['tgl_surat']); ?>, Sifat <span><?= $row['sifat']; ?></span></p>
                                                         </div>
                                                         <div class="ques-details10018">
